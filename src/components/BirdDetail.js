@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Detail(props) {
+function BirdDetail(props) {
     const { bird, onClickingDelete } = props;
     return (
         <React.Fragment>
@@ -18,10 +18,10 @@ function Detail(props) {
         </React.Fragment>
     );
 }
-Detail.propTypes = {
+BirdDetail.propTypes = {
     bird: PropTypes.object,
     onClickingDelete: PropTypes.func ,
     onClickingEdit: PropTypes.func
 };
 
-export default Detail;
+export default BirdDetail;
