@@ -4,11 +4,11 @@
 
 #### By: John Lenz, Brishna Bakshev, Sarah Andyshak, E Luckie, Erin Timlin and Molly Donegan
 
-#### 🍏[Technologies Used](#technologies-used)
-#### 🥕 [Component Diagram](#component-diagram)
-#### 🧄 [Setup / Installation](#setup-and-installation)
-#### 🍅 [Known Bugs](#known-bugs)
-#### 🥒 [License](#license)
+#### 🦩[Technologies Used](#technologies-used)
+#### 🦜 [Component Diagram](#component-diagram)
+#### 🦢 [Setup / Installation](#setup-and-installation)
+#### 🦚 [Known Bugs](#known-bugs)
+#### 🕊️ [License](#license)
 
 ## Technologies Used
 * React
