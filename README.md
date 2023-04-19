@@ -17,9 +17,9 @@
 * Babel
 * Bootstrap
 
-## Mockup
+<!-- ## Mockup
 
-![mockup]()
+![mockup]() -->
 
 ## Component Diagram
 ```

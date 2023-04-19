@@ -3,13 +3,13 @@ import Bird from "./Bird";
 import PropTypes from "prop-types";
 
 function BirdList(props){
-
   return (
     <React.Fragment>
-      {props.birdlist.map((bird) =>
+      {props.birdList.map((bird) =>
       <Bird
         whenBirdClicked = { props.onBirdSelection }
         name={bird.name}
+        color={bird.color}
         location={bird.location}
         date={bird.date}
         notes={bird.notes}

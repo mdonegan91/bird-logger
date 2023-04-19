@@ -32,10 +32,7 @@ class BirdControl extends React.Component {
 
   handleAddingNewBirdToList = (newBird) => {
     const newMainBirdList = this.state.mainBirdList.concat(newBird);
-    this.setState({
-      mainBirdList: newMainBirdList,
-      selectedBird: null
-    });
+    this.setState({mainBirdList: newMainBirdList, formVisibleOnPage: false});
   }
 
   handleChangingSelectedBird = (id) => {
@@ -48,7 +45,7 @@ class BirdControl extends React.Component {
     this.setState({
       mainBirdList: newMainBirdList,
       selectedBird: null
-    })
+    });
   }
 
   handleEditClick = () => {
@@ -78,7 +75,7 @@ render(){
   } else if (this.state.selectedBird != null) {
     currentlyVisibleState = <BirdDetail bird = {this.state.selectedBird}
       onClickingDelete = {this.handleDeletingBird}
-      onClickingEdit = {this.handleEditClick} />;
+      onClickingEdit = {this.handleEditClick} />
     buttonText = "Return to Bird List";
   } else if (this.state.formVisibleOnPage) {
     currentlyVisibleState = <NewBirdForm onNewBirdCreation={this.handleAddingNewBirdToList} />;

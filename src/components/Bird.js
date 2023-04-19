@@ -19,7 +19,7 @@ Bird.propTypes = {
   name: PropTypes.string,
   color: PropTypes.string,
   location: PropTypes.string,
-  date: PropTypes.instanceOf(Date), //find React date function??
+  date: PropTypes.string, 
   notes: PropTypes.string,
   id: PropTypes.string,
   whenBirdClicked: PropTypes.func

@@ -28,7 +28,7 @@ function ReusableForm(props) {
         <br />
 
         <input 
-          type='text' // check this
+          type='text'
           name='date'
           placeholder='Sighting date'
         />

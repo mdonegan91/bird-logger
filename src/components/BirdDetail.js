@@ -11,10 +11,9 @@ function BirdDetail(props) {
             <h3>{bird.location}</h3>
             <h3>{bird.date}</h3>
             <h3>{bird.notes}</h3>
-            <button onClick={props.onClickingEdit}>Update Bird Details</button>
-            <button onClick={() => onClickingDelete(bird.id)}>Close Form</button>
+            <button onClick={ props.onClickingEdit }>Update Bird Details</button>
+            <button onClick={() => onClickingDelete(bird.id)}>Delete Bird</button>
             <hr />
-
         </React.Fragment>
     );
 }
