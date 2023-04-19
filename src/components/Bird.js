@@ -1,16 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Toast from 'react-bootstrap/Toast';
 
 function Bird(props){
   return(
     <React.Fragment>
-      <div onClick = {() => props.whenBirdClicked(props.id)}>
-        <h3>{props.name}</h3>
-        <p>{props.color}</p>
-        <p>{props.location}</p>
-        <p>{props.date}</p>
-        <p>{props.notes}</p>
+      <Toast className="mb-4">
+      <Toast.Header closeButton={false}>
+        <div onClick={() => props.whenBirdClicked(props.id)}>
+        <h3 style={{color: 'blue'}}>Name: {props.name}</h3>
+         <p>Color: {props.color}</p>
+        <p>Location: {props.location}</p>
+        <p>Date: {props.date}</p>
+        <p>Notes: {props.notes}</p>
       </div>
+      </Toast.Header>
+            <Toast.Body>{props.desc}</Toast.Body>
+        </Toast>
     </React.Fragment>
   );
 }

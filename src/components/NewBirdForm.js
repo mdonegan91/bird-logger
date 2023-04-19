@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { v4 } from 'uuid';
 import ReusableForm from "./ReusableForm";
+// import ColorfulBirds from "./../img/colorfulBirds.jpg"
+import Button from 'react-bootstrap/Button';
 
 function NewBirdForm(props){
 
@@ -20,8 +22,9 @@ function NewBirdForm(props){
   return (
     <React.Fragment>
       <ReusableForm
-        formSubmissionHandler={handleNewBirdFormSubmission} buttonText="New Bird!" />
-    </React.Fragment>
+        formSubmissionHandler={handleNewBirdFormSubmission}
+        buttonText={<Button variant="primary" style={{margin: '10px'}}>Add Bird</Button>} />
+    </React.Fragment>   
   );
 }
 
@@ -30,3 +33,6 @@ NewBirdForm.propTypes = {
 };
 
 export default NewBirdForm;
+
+// <br />
+// <img src={ColorfulBirds} height={300} alt="Two colorful birds" />

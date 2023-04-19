@@ -25,8 +25,13 @@
 ```
 App.js
 ├── Header.js
-├── ProduceControl.js
-│   ├── ProductList.js           
+├── BirdControl.js
+│   ├── NewBirdForm.js
+│   │   ├── ReusableForm.js
+│   ├── BirdList.js   
+│   │   ├── Bird.js
+│   ├── BirdDetail.js   
+│   ├── EditBirdForm.js           
 ├── LocationControl.js
 │   ├── LocationList.js       
 ```

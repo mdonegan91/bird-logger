@@ -1,47 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function ReusableForm(props) {
   return(
     <React.Fragment>
-      <hr />
-      <form onSubmit={props.formSubmissionHandler}>
-        <input 
-          type='text'
-          name='name'
-          placeholder='Bird name'
-        />
-        <br />
+      <Form onSubmit={props.formSubmissionHandler}>
+        <Form.Group controlId="name">
+          <Form.Label>Bird name</Form.Label>
+          <Form.Control type="text" placeholder="Enter bird name" />
+        </Form.Group>
 
-        <input 
-          type='text'
-          name='color'
-          placeholder='Bird color'
-        />
-        <br />
+        <Form.Group controlId="color">
+          <Form.Label>Bird color</Form.Label>
+          <Form.Control type="text" placeholder="Enter bird color" />
+        </Form.Group>
 
-        <input 
-          type='text'
-          name='location'
-          placeholder='Sighting location'
-        />
-        <br />
+        <Form.Group controlId="location">
+          <Form.Label>Sighting location</Form.Label>
+          <Form.Control type="text" placeholder="Enter sighting location" />
+        </Form.Group>
 
-        <input 
-          type='text'
-          name='date'
-          placeholder='Sighting date'
-        />
-        <br />
+        <Form.Group controlId="date">
+          <Form.Label>Sighting date</Form.Label>
+          <Form.Control type="date" placeholder="Enter sighting date" />
+        </Form.Group>
 
-        <textarea
-          name='notes'
-          placeholder='Sighting notes'
-        />
-        <br />
+        <Form.Group controlId="notes">
+          <Form.Label>Sighting notes</Form.Label>
+          <Form.Control as="textarea" rows={3} placeholder="Enter sighting notes" />
+        </Form.Group>
 
-        <button type="submit">{props.buttonText}</button>
-      </form>
+        <Button variant="primary" type="submit" style={{margin: '10px'}}>{props.buttonText}</Button>
+      </Form>
     </React.Fragment>
   );
 }
