@@ -30,6 +30,7 @@ App.js
 ├── LocationControl.js
 │   ├── LocationList.js       
 ```
+![design](/bird-logger%20design.png)
 
 # Getting Started with Create React App
 
