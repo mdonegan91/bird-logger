@@ -23,6 +23,6 @@ Bird.propTypes = {
   notes: PropTypes.string,
   id: PropTypes.string,
   whenBirdClicked: PropTypes.func
-}
+};
 
 export default Bird;
