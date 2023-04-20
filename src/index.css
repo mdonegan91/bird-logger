@@ -3,14 +3,18 @@
 body {
   margin: 0;
   font-family: 'Emilys Candy', cursive;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:slategray
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bird-card {
+  margin: 20px 0;
+  margin-right: 20px;
+  padding: 20px;
 }

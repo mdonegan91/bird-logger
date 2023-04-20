@@ -31,9 +31,7 @@ App.js
 │   ├── BirdList.js   
 │   │   ├── Bird.js
 │   ├── BirdDetail.js   
-│   ├── EditBirdForm.js           
-├── LocationControl.js
-│   ├── LocationList.js       
+│   ├── EditBirdForm.js            
 ```
 ![design](/bird-logger%20design.png)
 

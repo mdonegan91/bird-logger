@@ -1,10 +1,19 @@
 import React from "react";
+import Robin from "./../img/robin-header.png"
 
 function Header(){
   const headerStyles = {
-    padding: 20,
-    margin: 5
+    textAlign: "right",
+    padding: 30,
+    margin: 5,
+    backgroundImage:`url(${Robin})`,
+    backgroundSize: "100%",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center top 35%",
+    color: "white",
+    boxShadow: "0 2px 5px rgba(0,0,0,0.3)"
   }
+
   return(
 
     <React.Fragment>

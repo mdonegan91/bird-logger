@@ -8,27 +8,27 @@ function ReusableForm(props) {
     <React.Fragment>
       <Form onSubmit={props.formSubmissionHandler}>
         <Form.Group controlId="name">
-          <Form.Label>Bird name</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control type="text" placeholder="Enter bird name" />
         </Form.Group>
 
         <Form.Group controlId="color">
-          <Form.Label>Bird color</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control type="text" placeholder="Enter bird color" />
         </Form.Group>
 
         <Form.Group controlId="location">
-          <Form.Label>Sighting location</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control type="text" placeholder="Enter sighting location" />
         </Form.Group>
 
         <Form.Group controlId="date">
-          <Form.Label>Sighting date</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control type="date" placeholder="Enter sighting date" />
         </Form.Group>
 
         <Form.Group controlId="notes">
-          <Form.Label>Sighting notes</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control as="textarea" rows={3} placeholder="Enter sighting notes" />
         </Form.Group>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Toast from 'react-bootstrap/Toast';
+// import Card from 'react-bootstrap/Card';
 
 function Bird(props){
   return(
@@ -8,14 +9,14 @@ function Bird(props){
       <Toast className="mb-4">
       <Toast.Header closeButton={false}>
         <div onClick={() => props.whenBirdClicked(props.id)}>
-        <h3 style={{color: 'blue'}}>Name: {props.name}</h3>
-         <p>Color: {props.color}</p>
+        <h3>Name: {props.name}</h3>
+        <p>Color: {props.color}</p>
         <p>Location: {props.location}</p>
         <p>Date: {props.date}</p>
         <p>Notes: {props.notes}</p>
-      </div>
+        </div>
       </Toast.Header>
-            <Toast.Body>{props.desc}</Toast.Body>
+            {/* <Toast.Body>{props.desc}</Toast.Body> */}
         </Toast>
     </React.Fragment>
   );
@@ -32,3 +33,4 @@ Bird.propTypes = {
 };
 
 export default Bird;
+
